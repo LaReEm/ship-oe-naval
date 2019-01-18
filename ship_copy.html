@@ -1,0 +1,153 @@
+<html>
+<head>
+<meta charset="utf-8">
+<style type="text/css">
+#wrap{
+	background-color:white;
+	background-image:url("bgpic_big.jpg");
+	width:1000px;
+	height:610px;
+	margin:auto;
+	z-index:1;
+}
+.marker_d{
+	background-color:#0000CD;
+	width:12px;
+	height:12px;
+	position:relative;
+	display:inline-block;
+	z-index:2;
+}
+.marker_t{
+	background-color:darkred;
+	width:12px;
+	height:12px;
+	position:relative;
+	display:inline-block;
+	z-index:2;
+}
+#info{
+	position:relative;
+	background-color: rgba(255, 255, 255, 0.8);
+	font-size:20px;
+	width:84%;
+	left:8%;
+	top:5%;
+	z-index:3;
+	border-radius:5px;
+	box-shadow: 0 10px 10px rgba(0,0,0,0.7);
+	display:none;
+}
+#info_pic{
+	width:50%;
+	padding:5px;
+	float:left;
+}
+#info_text{
+	width:49%;
+	margin-left:51%;
+}
+#inner_text{
+	margin: 5px;
+}
+#picarea{
+	z-index:4;
+	height510px;
+	width:410px;
+}
+#closer{
+	margin:0px 5px 5px 0px;
+	background-color:navy;
+	color:white;
+	font-size:14pt;
+	font-family:serif;
+	border-radius:10px;
+}
+.marker_d:hover{
+	background-color:red;
+}
+.marker_t:hover{
+	background-color:red;
+}
+</style>
+</head>
+<body>
+<script type="text/javascript">
+var illustrations = ['first.jpg','second.jpg','third.jpg','fourth.jpg','fifth.jpg','sixth.jpg']
+var information = ['Луиджи Джильди - капитан фельпской шхуны "Влюбленная акула", по зову сердца (и разума, поселившего в его снах Первого маршала Рокэ Алву) присоединившегося к талигойцам в битве при Хексберг. <br/><br/> Молод и несколько наивен, не желает возвращаться домой и готовиться к роли дожа города-государства Фельпа, погружаясь в политические интриги. Страдал от тайной и неразделенной любви к теньенту бордонского флота Поликсене Лагидис, погибшей при попытке бордонского флота захватить Фельп.<br/><br/>После победы при Фельпе отправился в Хексберг, присоединившись к талигойскому авангарду в качестве одного из вспомогательных судов. Именно "Влюбленной акулой" в неразберихе бегства дриксов с поля боя был спасен раненый адмирал Олаф Кальдмеер.', 'Ротгер Вальдес - вице-адмирал флота Талига. Наполовину северянин-бергер, наполовину марикьяре, среди врагов пользуется славой невменяемого безумца, среди друзей - репутацией безумца крайне удачливого. Водит корабль "Астэра", который неприятели предпочитают называть "Закатной тварью".<br/><br/> Вальдес является, пожалуй, наиболее известным за пределами Талига представителем флота Дриксен, не считая Первого адмирала Рамона Альмейды, известного преимущественно габаритами и беспощадностью к врагам Талига. Несмотря на отсутствие влиятельной родословной, Вальдес пользуется поддержкой даже вице-адмирала Хулио Салины, двоюродного брата Первого маршала Рокэ Алвы.<br/><br/> Даже самые рискованные начинания Вальдеса чаще всего заканчиваются успехом, причем недоброжелатели утверждают, что своими морскими достижениями он во многом обязан любви кэцхен, которые меняют погоду в море в его пользу. <br/><br/> Но, все же, его удачливость не обеспечивает Вальдесу карьерного роста - командование крупными корабельными соединениями чаще поручается более взвешенным командирам, таким как вице-адмиралы Себастьян Берлинга или Антонио Бреве.', 'инфа три', 'инфа четыре', 'инфа пять','инфа шесть']
+function getValueFirst(){
+	var number = 0;
+	var field = document.getElementById('info');
+	var picarea = document.getElementById('picarea');
+	var infoarea = document.getElementById('inner_text');
+	field.style.display = "block";
+	picarea.src = illustrations[number]
+	infoarea.innerHTML = information[number]
+}
+function getValueSecond(){
+	var number = 1;
+	var field = document.getElementById('info');
+	var picarea = document.getElementById('picarea');
+	var infoarea = document.getElementById('inner_text');
+	field.style.display = "block";
+	picarea.src = illustrations[number]
+	infoarea.innerHTML = information[number]
+}
+function getValueThird(){
+	var number = 2;
+	var field = document.getElementById('info');
+	var picarea = document.getElementById('picarea');
+	var infoarea = document.getElementById('inner_text');
+	field.style.display = "block";
+	picarea.src = illustrations[number]
+	infoarea.innerHTML = information[number]
+}
+function getValueFourth(){
+	var number = 3;
+	var field = document.getElementById('info');
+	var picarea = document.getElementById('picarea');
+	var infoarea = document.getElementById('inner_text');
+	field.style.display = "block";
+	picarea.src = illustrations[number]
+	infoarea.innerHTML = information[number]
+}
+function getValueFifth(){
+	var number = 4;
+	var field = document.getElementById('info');
+	var picarea = document.getElementById('picarea');
+	var infoarea = document.getElementById('inner_text');
+	field.style.display = "block";
+	picarea.src = illustrations[number]
+	infoarea.innerHTML = information[number]
+}
+function getValueSixth(){
+	var number = 5;
+	var field = document.getElementById('info');
+	var picarea = document.getElementById('picarea');
+	var infoarea = document.getElementById('inner_text');
+	field.style.display = "block";
+	picarea.src = illustrations[number]
+	infoarea.innerHTML = information[number]
+}
+function closeInfo(){
+	var field = document.getElementById('info');
+	field.style.display = "none";
+}
+</script>
+		<div id="wrap">
+			<div class="marker_d" id = "first" onclick="getValueFirst()" style="left:18%;top:470px;"></div>
+			<div class="marker_t" id = "second" onclick="getValueSecond()" style="left:28%;top:500px;"></div>
+			<div class="marker_d"  id="third" onclick="getValueThird()" style="left:46%;top:495px;"></div>
+			<div class="marker_d"  id="fourth" onclick="getValueFourth()" style="left:54%;top:470px;"></div>
+			<div class="marker_t"  id="fifth" onclick="getValueFifth()" style="left:42%;top:330px;"></div>
+			<div class="marker_t"  id="sixth" onclick="getValueSixth()" style="left:68%;top:470px;"></div>
+			<div id="info">
+				<div id="info_pic"><img id="picarea" align="center" src="pic.jpg"></div>
+				<div id="info_text">
+					<p id='inner_text'>text text</p>
+					<button id='closer' onclick="closeInfo()">Закрыть</button>
+				</div>
+			</div>
+		</div>
+</body>
+</html>
